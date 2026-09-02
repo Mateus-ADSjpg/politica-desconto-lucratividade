@@ -190,16 +190,3 @@ psql -d superstore -f sql/03_analises.sql
 
 Testado em PostgreSQL 18. As consultas usam `FILTER (WHERE ...)` e funções de janela, que exigem
 PostgreSQL 9.4 ou superior.
-
-## Estrutura
-
-```
-.
-├── dados/
-│   └── samplesuperstore.csv
-├── sql/
-│   ├── 01_criacao_tabelas.sql    # staging + tabela final + índices
-│   ├── 02_limpeza.sql            # conferências, deduplicação, carga
-│   └── 03_analises.sql           # 8 consultas analíticas
-└── imagens/
-```
